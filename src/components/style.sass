@@ -1,6 +1,9 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #333
 $accent-color:  #f15a24
+$cowrie-gray: #c2c2c2
+$normal-padding: 10px
+$normal-bottom-margin: 1.45rem
 
 body
   font: 100% $font-stack
@@ -9,7 +12,33 @@ body
 h1
   color: $accent-color
 
-h2
+a
+  text-decoration: none
+  color: $accent-color
+
+header
+  div
+    display: flex
+    justify-content: space-between
+
+nav
+  display: flex
   a
-    text-decoration: none
     color: $primary-color
+    padding-left: 3vw
+
+.categories
+  display: flex
+  justify-content: space-between
+  margin-bottom: $normal-bottom-margin
+
+.category-card
+  border: 1px solid $cowrie-gray
+  border-radius: 3px
+  padding: $normal-padding
+  width: 22.5%
+  height: 100px
+  box-shadow: 5px 10px $primary-color
+  -webkit-box-shadow: 8px 8px 10px -8px $cowrie-gray
+  -moz-box-shadow: 8px 8px 10px -8px $cowrie-gray
+  box-shadow: 8px 8px 10px -8px $cowrie-gray
